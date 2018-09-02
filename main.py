@@ -52,12 +52,12 @@ class JingGame(Widget):
 	#-1为玩家，画圆
 	def draw_circle(self, x, y):
 		circle_x, circle_y = self.get_draw_coor(x, y)
-		self.canvas.add(Ellipse(source='./yuan.png', size=(50, 50), pos=(circle_x, circle_y)))
+		self.canvas.add(Ellipse(source='./image/yuan.png', size=(50, 50), pos=(circle_x, circle_y)))
 
 	#1为ai，画叉
 	def draw_cha(self, x, y):
 		cha_x, cha_y = self.get_draw_coor(x, y)
-		self.canvas.add(Ellipse(source='./cha.png', size=(50, 50), pos=(cha_x, cha_y)))
+		self.canvas.add(Ellipse(source='./image/cha.png', size=(50, 50), pos=(cha_x, cha_y)))
 
 	def get_draw_coor(self, x, y):
 		if (x, y) == (0, 0):
